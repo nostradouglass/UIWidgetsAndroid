@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text View"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:inputType="text"
+        android:hint="Edit Text" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:inputType="date"
+        android:hint="Edit Text Date" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="30dp"
+        />
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="30dp" >
+
+       <RadioButton
+           android:id="@+id/radioItem1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="radio item 1"
+           android:checked="true"
+       />
+
+
+       <RadioButton
+           android:id="@+id/radioItem2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="radio item 2"
+           android:checked="false"
+           />
+   </RadioGroup>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox 1"
+            android:id="@+id/checkbox1"
+            android:layout_margin="10dp"
+            android:checked="true" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox 2"
+            android:id="@+id/checkbox2"
+            android:layout_margin="10dp"
+            android:checked="false" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton1"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:textOff="Toggle Button Off"
+            android:textOn="Toggle Button On"
+            android:text="Toggle Button" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toggleButton2"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:textOff="Toggle Button Off "
+            android:textOn="Toggle ButtonOn"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:checked="true"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch2"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:checked="false"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar1"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_margin="20dp"
+            android:progress="30"/>
+
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_margin="20dp"
+            android:progress="80"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekbar1"
+            android:max="50"
+            android:layout_gravity="center"
+            android:progress="10" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekbar2"
+            android:max="50"
+            android:layout_gravity="center"
+            android:progress="40" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:id="@+id/ratingBar1"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:rating="4"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar2"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:rating="4"
+            android:numStars="10"
+            android:stepSize="0.25" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Spinner1"
+            android:layout_margin="20dp"
+            android:layout_gravity="center" />
+
+        <CheckedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkedTextView"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:checked="false"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleX=".8"
+            android:scaleY=".8" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
